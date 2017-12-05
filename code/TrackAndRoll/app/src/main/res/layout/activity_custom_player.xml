@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/NeosToolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_padding"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginEnd="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginTop="@dimen/activity_custom_player_edit_text_margin_top"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/activity_custom_player_profile_picture_size"
+                            android:layout_height="@dimen/activity_custom_player_profile_picture_size"
+                            android:orientation="horizontal"
+                            android:clickable="true"
+                            android:gravity="center"
+                            >
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/icMyAccountPhoto"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:civ_border_width="0dp"
+                                android:src="@drawable/ic_avatar"
+                                />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/activity_custom_player_names_padding_start"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/tvAccountLastName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/activity_custom_player_names_size"
+                                android:textColor="@color/colorWhite"
+                                android:text="Nom"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvAccountFirstName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/activity_custom_player_names_size"
+                                android:textColor="@color/colorWhite"
+                                android:text="Prénom"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginTop="@dimen/activity_custom_player_edit_text_margin_top"
+                    android:gravity="start"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/btnTakePicture"
+                        android:clickable="true"
+                        android:layout_width="@dimen/activity_custom_player_button_background_size"
+                        android:layout_height="@dimen/activity_custom_player_button_background_size"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/activity_custom_player_button_margin"
+                        android:background="@drawable/selector_background_circle_blue_button"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/activity_custom_player_button_image_padding_size"
+                            android:src="@drawable/ic_take_picture"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btnImportPicture"
+                        android:clickable="true"
+                        android:layout_width="@dimen/activity_custom_player_button_background_size"
+                        android:layout_height="@dimen/activity_custom_player_button_background_size"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/activity_custom_player_button_margin"
+                        android:background="@drawable/selector_background_circle_blue_button"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/activity_custom_player_button_image_padding_size"
+                            android:src="@drawable/ic_import_picture"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnRemovePicture"
+                        android:clickable="true"
+                        android:layout_width="@dimen/activity_custom_player_button_background_size"
+                        android:layout_height="@dimen/activity_custom_player_button_background_size"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/activity_custom_player_button_margin"
+                        android:background="@drawable/selector_background_circle_blue_button"
+                        >
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="@dimen/activity_custom_player_button_image_padding_size"
+                            android:src="@drawable/ic_no_camera"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginEnd="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginTop="@dimen/activity_custom_player_edit_text_margin_top"
+                    >
+
+                     <EditText
+                        android:id="@+id/etPlayerLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_custom_player_edit_text_padding"
+                        android:background="@drawable/rect_border_grey"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/activity_custom_player_edit_text_size"
+                        android:inputType="textCapWords"
+                        android:textColorHint="@color/colorTextHint"
+                        android:hint="@string/activity_add_new_player_last_name_hint"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginEnd="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginTop="@dimen/activity_custom_player_edit_text_margin_top"
+                    >
+
+                    <EditText
+                        android:id="@+id/etPlayerFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_custom_player_edit_text_padding"
+                        android:background="@drawable/rect_border_grey"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/activity_custom_player_edit_text_size"
+                        android:inputType="textCapWords"
+                        android:textColorHint="@color/colorTextHint"
+                        android:hint="@string/activity_add_new_player_first_name_hint"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginEnd="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginTop="@dimen/activity_custom_player_edit_text_margin_top"
+                    >
+
+                    <EditText
+                        android:id="@+id/etPlayerAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_custom_player_edit_text_padding"
+                        android:background="@drawable/rect_border_grey"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/activity_custom_player_edit_text_size"
+                        android:inputType="number"
+                        android:textColorHint="@color/colorTextHint"
+                        android:hint="@string/activity_add_new_player_age_hint"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginEnd="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginTop="@dimen/activity_custom_player_edit_text_margin_top"
+                    >
+
+                    <EditText
+                        android:id="@+id/etPlayerPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_custom_player_edit_text_padding"
+                        android:background="@drawable/rect_border_grey"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/activity_custom_player_edit_text_size"
+                        android:inputType="textCapWords"
+                        android:textColorHint="@color/colorTextHint"
+                        android:hint="@string/activity_add_new_player_post_hint"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginEnd="@dimen/activity_custom_player_edit_text_margin_sides"
+                    android:layout_marginTop="@dimen/activity_custom_player_edit_text_margin_top"
+                    >
+
+                    <EditText
+                        android:id="@+id/etPlayerNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_custom_player_edit_text_padding"
+                        android:background="@drawable/rect_border_grey"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/activity_custom_player_edit_text_size"
+                        android:inputType="number"
+                        android:textColorHint="@color/colorTextHint"
+                        android:hint="@string/activity_add_new_player_number_hint"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/colorBlue"
+        android:src="@drawable/ic_save"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="16dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_delete_button"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

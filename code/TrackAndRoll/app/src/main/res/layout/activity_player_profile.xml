@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                style="@style/NeosToolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_padding"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentStart="true"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icMyAccountPhoto"
+                    android:layout_width="@dimen/activity_player_profile_image_size"
+                    android:layout_height="@dimen/activity_player_profile_image_size"
+                    app:civ_border_width="0dp"
+                    android:src="@drawable/ic_avatar"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvPlayerAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/activity_player_profile_text_size"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/activity_login_subtitle"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPlayerPoste"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/activity_player_profile_text_size"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/activity_login_subtitle"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPlayerNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/activity_player_profile_text_size"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/activity_login_subtitle"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                >
+
+                <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/spFilterSession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="0dp"
+                    android:paddingLeft="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:paddingBottom="0dp"
+
+                    app:ms_thickness="0dp"
+                    app:ms_enableFloatingLabel="false"
+                    app:ms_enableErrorLabel="false"
+                    app:ms_arrowSize="@dimen/activity_sessions_manager_arrow_size"
+                    app:ms_arrowColor="@color/colorWhite"
+                    app:ms_alignLabels="false"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/activity_player_profile_margintop_data_images"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="@dimen/activity_player_profile_data_width"
+                        android:layout_height="@dimen/activity_player_profile_data_height"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/selector_background_player_profile_data"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/activity_player_profile_data_margin"
+                        android:id="@+id/layoutDataSpeed"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_image_size"
+                            android:src="@drawable/ic_speed"
+                            />
+
+                        <View
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_divider_size"
+                            android:background="@color/colorPlayerProfileDataDivider"
+                            android:layout_margin="@dimen/activity_player_profile_data_divider_margin"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPlayerDataSpeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/activity_player_profile_text_size_image"
+                            android:textColor="@color/colorWhite"
+                            android:textAlignment="center"
+                            android:text="@string/activity_login_subtitle"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/activity_player_profile_data_width"
+                        android:layout_height="@dimen/activity_player_profile_data_height"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/selector_background_player_profile_data"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/activity_player_profile_data_margin"
+                        android:id="@+id/layoutDataDistance"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_image_size"
+                            android:src="@drawable/ic_distance"
+                            />
+
+                        <View
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_divider_size"
+                            android:background="@color/colorPlayerProfileDataDivider"
+                            android:layout_margin="@dimen/activity_player_profile_data_divider_margin"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPlayerDataDistance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/activity_player_profile_text_size_image"
+                            android:textColor="@color/colorWhite"
+                            android:textAlignment="center"
+                            android:text="@string/activity_login_subtitle"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/activity_player_profile_data_width"
+                        android:layout_height="@dimen/activity_player_profile_data_height"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/selector_background_player_profile_data"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/activity_player_profile_data_margin"
+                        android:id="@+id/layoutDataTime"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_image_size"
+                            android:src="@drawable/ic_timer"
+                            />
+
+                        <View
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_divider_size"
+                            android:background="@color/colorPlayerProfileDataDivider"
+                            android:layout_margin="@dimen/activity_player_profile_data_divider_margin"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPlayerDataTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/activity_player_profile_text_size_image"
+                            android:textColor="@color/colorWhite"
+                            android:textAlignment="center"
+                            android:text="@string/activity_login_subtitle"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/activity_player_profile_data_width"
+                        android:layout_height="@dimen/activity_player_profile_data_height"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/selector_background_player_profile_data"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/activity_player_profile_data_margin"
+                        android:id="@+id/layoutDataHeartBeat"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_image_size"
+                            android:src="@drawable/ic_heartbeat"
+                            />
+
+                        <View
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_divider_size"
+                            android:background="@color/colorPlayerProfileDataDivider"
+                            android:layout_margin="@dimen/activity_player_profile_data_divider_margin"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPlayerDataHeartBeat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/activity_player_profile_text_size_image"
+                            android:textColor="@color/colorWhite"
+                            android:textAlignment="center"
+                            android:text="@string/activity_login_subtitle"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/activity_player_profile_data_width"
+                        android:layout_height="@dimen/activity_player_profile_data_height"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:background="@drawable/selector_background_player_profile_data"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/activity_player_profile_data_margin"
+                        android:id="@+id/layoutDataEnergy"
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_image_size"
+                            android:src="@drawable/ic_energy"
+                            />
+
+                        <View
+                            android:layout_width="@dimen/activity_player_profile_data_image_size"
+                            android:layout_height="@dimen/activity_player_profile_data_divider_size"
+                            android:background="@color/colorPlayerProfileDataDivider"
+                            android:layout_margin="@dimen/activity_player_profile_data_divider_margin"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvPlayerDataEnergy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/activity_player_profile_text_size_image"
+                            android:textColor="@color/colorWhite"
+                            android:textAlignment="center"
+                            android:text="@string/activity_login_subtitle"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabDeletePlayerData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        app:backgroundTint="@color/colorRed"
+        android:src="@drawable/ic_delete_all_data"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

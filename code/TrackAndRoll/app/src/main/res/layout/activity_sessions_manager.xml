@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_session"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    android:background="@drawable/degrade_background"
+    android:gravity="top|start"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        >
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spFilterSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="0dp"
+            android:paddingLeft="0dp"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="0dp"
+
+            app:ms_thickness="0dp"
+            app:ms_enableFloatingLabel="false"
+            app:ms_enableErrorLabel="false"
+            app:ms_arrowSize="@dimen/activity_sessions_manager_arrow_size"
+            app:ms_arrowColor="@color/colorWhite"
+            app:ms_alignLabels="false"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="@integer/activity_sessions_weight_sum"
+        >
+
+        <!-- PHOTO FIRSTNAME AND LASTNAME -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="@integer/activity_sessions_weight_name_photo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_sessions_manager_text_size"
+                android:text="@string/activity_sessions_manager_name"
+                />
+        </LinearLayout>
+
+        <!-- SPEED -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="@integer/activity_sessions_weight_speed"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_sessions_manager_text_size"
+                android:text="@string/activity_sessions_manager_speed"
+                />
+        </LinearLayout>
+
+        <!-- DISTANCE -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="@integer/activity_sessions_weight_distance"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_sessions_manager_text_size"
+                android:text="@string/activity_sessions_manager_distance"
+                />
+        </LinearLayout>
+
+        <!-- TIME -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="@integer/activity_sessions_weight_time"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_sessions_manager_text_size"
+                android:text="@string/activity_sessions_manager_time"
+                />
+        </LinearLayout>
+
+        <!-- HEART BEAT -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="@integer/activity_sessions_weight_heart_beat"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold"
+                android:textSize="@dimen/activity_sessions_manager_text_size"
+                android:text="@string/activity_sessions_manager_heart_beat"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSessionItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>

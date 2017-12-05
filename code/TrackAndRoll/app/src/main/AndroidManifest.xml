@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.neos.trackandroll">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- ServiceActivity "-->
+        <activity
+            android:name=".view.activity.ServiceActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- SplashActivity -->
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+
+        <!-- LoginActivity -->
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+        />
+
+        <!-- PlayersActivity -->
+        <activity
+        android:name=".view.activity.PlayersActivity"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:label="@string/activity_players_title"
+        />
+
+        <!-- SensorsManagerActivity -->
+        <activity
+            android:name=".view.activity.SensorsManagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_sensors_manager_title"
+            />
+
+        <!-- SessionsManagerActivity -->
+        <activity
+            android:name=".view.activity.SessionsManagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_session_title"
+            />
+
+        <!-- HelpActivity -->
+        <activity
+            android:name=".view.activity.HelpActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_help_title"
+            />
+
+        <!-- CustomPlayerActivity -->
+        <activity
+            android:name=".view.activity.CustomPlayerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_add_new_player_title"
+            />
+
+        <!-- My Account Activity -->
+        <activity
+            android:name=".view.activity.MyAccountActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_my_account_title"
+            />
+
+        <!-- Player Profile Activity -->
+        <activity
+            android:name=".view.activity.PlayerProfileActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_player_profile_title"
+            />
+
+        <!-- Data Speed Activity -->
+        <activity
+            android:name=".view.activity.DataSpeedActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_data_speed_title"
+            />
+
+        <!-- Data Distance Activity -->
+        <activity
+            android:name=".view.activity.DataDistanceActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_data_distance_title"
+            />
+
+        <!-- Data Time Activity -->
+        <activity
+            android:name=".view.activity.DataTimeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_data_time_title"
+            />
+
+        <!-- Data HeartBeat Activity -->
+        <activity
+            android:name=".view.activity.DataHeartBeatActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_data_heart_beat_title"
+            />
+
+        <!-- Data Energy Activity -->
+        <activity
+            android:name=".view.activity.DataEnergyActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_data_energy_title"
+            />
+
+        <!-- Running Session Activity -->
+        <activity
+            android:name=".view.activity.RunningSessionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_running_session_title"
+            />
+
+        <!-- Test Bluetooth Activity -->
+        <activity
+            android:name=".testBluetooth.TestBluetoothActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="Test Bluetooth"
+            />
+
+        <!-- List Bluetooth Activity -->
+        <activity
+            android:name=".testBluetooth.ListBluetoothActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="List Bluetooth"
+            />
+
+    </application>
+
+</manifest>

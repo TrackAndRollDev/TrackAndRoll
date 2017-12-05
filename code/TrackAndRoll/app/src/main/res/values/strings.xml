@@ -1,0 +1,195 @@
+<resources>
+    <string name="app_name">Track&amp;Roll</string>
+
+    <!-- SplashActivity -->
+    <string name="splash_credit">\@2017–2018 | by NEOS</string>
+
+    <!-- LoginActivity -->
+    <string name="activity_login_subtitle">Login</string>
+    <string name="login_hint_username">Enter your username</string>
+    <string name="login_hint_password">Enter your password</string>
+    <string name="login_message_error">Message erreur</string>
+    <string name="login_message_in_progress">Connexion…</string>
+    <string name="login_button">Connect</string>
+
+    <!-- Menu items -->
+    <string name="menu_main_player">Joueurs</string>
+    <string name="menu_main_session">Session</string>
+    <string name="menu_main_sensors">Capteurs</string>
+    <string name="menu_main_logout" >Déconnexion</string>
+    <string name="menu_main_help" >Aide</string>
+
+    <!-- SensorsManagerActivity -->
+    <string name="activity_sensors_manager_title" >Capteurs</string>
+    <string name="activity_sensors_manager_launch" >Lancer session</string>
+    <string name="activity_sensors_manager_sensor_format">Boitier %d</string>
+
+    <!-- SessionsManagerActivity -->
+    <string name="activity_session_title" >Session</string>
+    <string name="activity_sessions_manager_delete">Supprimer session</string>
+    <string name="activity_sessions_manager_edit_session_name">Modifier nom session</string>
+    <string name="activity_sessions_manager_add">Nouvelle session</string>
+
+    <string name="activity_sessions_manager_name">Nom</string>
+    <string name="activity_sessions_manager_speed">Vitesse</string>
+    <string name="activity_sessions_manager_distance">Distance</string>
+    <string name="activity_sessions_manager_time">Temps</string>
+    <string name="activity_sessions_manager_heart_beat">Fréq. Card</string>
+
+    <!-- HelpActivity -->
+    <string name="activity_help_title" >Aide</string>
+
+    <!-- PlayersActivity -->
+    <string name="activity_players_title" >Joueurs</string>
+    <string name="activity_players_save_configuration" >Sauvegarder configuration</string>
+    <string name="activity_players_sync" >Synchroniser</string>
+    <string name="activity_players_all_players_fragment_title">Tous</string>
+    <string name="activity_players_selected_players_fragment_title">Sélection</string>
+
+    <!-- CustomPlayerActivity -->
+    <string name="activity_custom_player_title" >Modifier Joueur</string>
+    <string name="activity_custom_player_save_button" >Enregistrer</string>
+
+    <!-- Player profile format -->
+    <string name="player_profile_format_age">%d ans</string>
+    <string name="player_profile_format_number">N°%d</string>
+    <string name="player_profile_format_speed">%d km/h</string>
+    <string name="player_profile_format_distance_m">%d m</string>
+    <string name="player_profile_format_distance_km">%d km</string>
+    <string name="player_profile_format_time">%1$:%2$:%3$</string>
+    <string name="player_profile_format_heart_beat">%d bpm</string>
+    <string name="player_profile_format_energy">%d kj</string>
+
+    <!-- Dialogs -->
+    <string name="activity_add_new_player_title">Nouveau joueur</string>
+    <string name="activity_add_new_player_last_name_hint">Nom</string>
+    <string name="activity_add_new_player_first_name_hint">Prénom</string>
+    <string name="activity_add_new_player_age_hint">Âge</string>
+    <string name="activity_add_new_player_number_hint">Numéro</string>
+    <string name="activity_add_new_player_post_hint">Poste</string>
+
+    <!-- My Account Activity -->
+    <string name="activity_my_account_title">Mon Compte</string>
+    <string name="activity_my_account_personal_information_title">Informations Personnelles</string>
+    <string name="activity_my_account_password_title">Mot de passe</string>
+    <string name="activity_my_account_last_name_hint">Nom</string>
+    <string name="activity_my_account_first_name_hint">Prénom</string>
+    <string name="activity_my_account_email_hint">E-mail</string>
+    <string name="activity_my_account_username_hint">Username</string>
+    <string name="activity_my_account_actual_password_hint">Actuel</string>
+    <string name="activity_my_account_new_password_hint">Nouveau</string>
+    <string name="activity_my_account_confirmation_password_hint">Confirmation</string>
+
+    <!-- Header -->
+    <string name="header_name">Prénom Nom</string>
+    <string name="header_email">E-mail</string>
+
+    <!-- Player profile activity -->
+    <string name="activity_player_profile_title">Nothing</string>
+    <string name="activity_player_profile_delete">Supprimer profil</string>
+    <string name="activity_player_profile_edit">Editer profil</string>
+
+    <!-- Data speed activity -->
+    <string name="activity_data_speed_title">Vitesse</string>
+
+    <!-- Data speed activity -->
+    <string name="activity_data_distance_title">Distance parcourue</string>
+
+    <!-- Data speed activity -->
+    <string name="activity_data_time_title">Temps</string>
+
+    <!-- Data speed activity -->
+    <string name="activity_data_heart_beat_title">Fréquence cardiaque</string>
+
+    <!-- Data speed activity -->
+    <string name="activity_data_energy_title">Puissance développée</string>
+
+    <!-- Running session activity -->
+    <string name="activity_running_session_title">Session en cours…</string>
+    <string name="activity_running_session_stop">Stopper session</string>
+
+    <!-- Dialog delete selected players -->
+    <string name="dialog_delete_selected_players_title">Supprimer</string>
+    <string name="dialog_delete_selected_players_content">Vous allez supprimer les joueurs sélectionnés. Êtes-vous sûr ?</string>
+
+    <!-- Dialog delete player -->
+    <string name="dialog_delete_player_title">Supprimer joueur</string>
+    <string name="dialog_delete_player_content">Vous allez supprimer le joueur. Êtes-vous sûr ?</string>
+
+    <!-- Dialog set name session -->
+    <string name="dialog_set_name_session_title">Modifier session</string>
+    <string name="dialog_set_name_session_et_hint">Nom de session</string>
+
+    <!-- Dialog set name running session -->
+    <string name="dialog_name_running_session_title">Enregistrer</string>
+    <string name="dialog_name_running_session_et_hint">Nom de session</string>
+
+    <!-- Dialog delete session -->
+    <string name="dialog_delete_session_title">Supprimer session</string>
+    <string name="dialog_delete_session_content">Vous allez supprimer la session. Êtes-vous sûr ?</string>
+
+    <!-- Dialog cannot delete session -->
+    <string name="dialog_cannot_delete_session_title">Impossible de Supprimer</string>
+    <string name="dialog_cannot_delete_session_content">Vous ne pouvez pas supprimer cette session.</string>
+
+    <!-- Dialog cannot custom session -->
+    <string name="dialog_cannot_custom_session_title">Impossible de modifier</string>
+    <string name="dialog_cannot_custom_session_content">Vous ne pouvez pas changer le nom de cette session.</string>
+
+    <!-- Dialog quit app -->
+    <string name="dialog_quit_app_title">Quitter</string>
+    <string name="dialog_quit_app_content">Êtes-vous sûr de vouloir quitter l\'application ?</string>
+
+    <!-- Dialog delete player data -->
+    <string name="dialog_delete_player_data_title">Supprimer données</string>
+    <string name="dialog_delete_player_data_content">Vous allez supprimer les données du joueur associées à cette session. Êtes-vous sûr ?</string>
+
+    <!-- Dialog end session -->
+    <string name="dialog_end_session_title">Fin de session ?</string>
+    <string name="dialog_end_session_content">Vous venez de terminer une session. Que voulez-vous faire ?</string>
+
+    <!-- Dialog end session -->
+    <string name="dialog_delete_running_session_title">Supprimer session en cours</string>
+    <string name="dialog_delete_running_session_content">Vous allez supprimer la session en cours. Êtes-vous sûr(e) ?</string>
+
+    <!-- Dialogs button -->
+    <string name="dialog_cancel">Annuler</string>
+    <string name="dialog_delete">Supprimer</string>
+    <string name="dialog_save">Enregistrer</string>
+    <string name="dialog_confirm">Confirmer</string>
+    <string name="dialog_ok">OK</string>
+
+    <!-- dialog saving session -->
+    <string name="dialog_saving_session_title">Enregistrement</string>
+    <string name="dialog_saving_session_text">En cours…</string>
+
+    <!-- error message -->
+    <string name="error_session_name">Veuillez saisir un nom de session valid</string>
+
+
+
+
+
+    <!-- Test bluetooth activity -->
+    <string name="discovery_cancel">Cancel Discovery</string>
+    <string name="discovery_start">Start Discovery</string>
+
+    <string name="label_bt_address">Remote Bluetooth Address</string>
+    <string name="label_bt_name">Remote Bluetooth Name</string>
+    <string name="label_bt_state_connected">Bluetooth State Connected</string>
+    <string name="label_bt_state_connecting">Bluetooth State Connecting</string>
+
+    <string name="label_bt_state_discovery_start">Bluetooth State Discovery Start</string>
+    <string name="label_bt_state_discovery_finish">Bluetooth State Discovery Finish</string>
+
+    <string name="label_bt_state_failure">Bluetooth State Failure</string>
+    <string name="label_bt_state_unknown">Bluetooth State Unknown</string>
+    <string name="label_no_rows">No Rows</string>
+    <string name="label_null_adapter">Bluetooth Null Adapter</string>
+    <string name="label_stub">Stub</string>
+
+    <string name="led_green_toggle">Green LED Toggle</string>
+    <string name="led_red_toggle">Red LED Toggle</string>
+    <string name="led_yellow_toggle">Yellow LED Toggle</string>
+
+</resources>

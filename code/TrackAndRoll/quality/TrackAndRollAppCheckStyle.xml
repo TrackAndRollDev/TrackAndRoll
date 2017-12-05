@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+    Checkstyle-Configuration: MonkeyIsland
+    Description: none
+-->
+<module name="Checker">
+  <property name="severity" value="warning"/>
+  <module name="TreeWalker">
+    <module name="AnnotationLocation"/>
+    <module name="PackageAnnotation"/>
+    <module name="BooleanExpressionComplexity"/>
+    <module name="ClassDataAbstractionCoupling"/>
+    <module name="ClassFanOutComplexity"/>
+    <module name="CyclomaticComplexity"/>
+    <module name="JavaNCSS"/>
+    <module name="NPathComplexity"/>
+    <module name="AnnotationUseStyle"/>
+    <module name="MissingDeprecated"/>
+    <module name="MissingOverride"/>
+    <module name="SuppressWarnings"/>
+    <module name="JavadocVariable">
+      <property name="excludeScope" value="protected"/>
+    </module>
+    <module name="JavadocMethod"/>
+    <module name="JavadocStyle">
+      <property name="checkFirstSentence" value="false"/>
+    </module>
+    <module name="NonEmptyAtclauseDescription"/>
+    <module name="JavadocTagContinuationIndentation"/>
+    <module name="AtclauseOrder">
+      <property name="target" value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
+      <property name="tagOrder" value="@param, @return, @throws, @deprecated"/>
+    </module>
+    <module name="SingleLineJavadoc">
+      <property name="ignoreInlineTags" value="false"/>
+    </module>
+    <module name="ClassTypeParameterName"/>
+    <module name="ConstantName"/>
+    <module name="LocalFinalVariableName"/>
+    <module name="LocalVariableName"/>
+    <module name="MemberName"/>
+    <module name="MethodName"/>
+    <module name="MethodTypeParameterName"/>
+    <module name="InterfaceTypeParameterName"/>
+    <module name="PackageName"/>
+    <module name="ParameterName"/>
+    <module name="StaticVariableName"/>
+    <module name="TypeName"/>
+    <module name="AbbreviationAsWordInName"/>
+    <module name="CatchParameterName"/>
+    <module name="AvoidStarImport"/>
+    <module name="AvoidStaticImport"/>
+    <module name="IllegalImport"/>
+    <module name="UnusedImports"/>
+    <module name="ImportControl">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="InterfaceTypeParameterNameCheck"/>
+    <module name="AnonInnerLength">
+      <property name="max" value="100"/>
+    </module>
+    <module name="ExecutableStatementCount">
+      <property name="tokens" value="INSTANCE_INIT,STATIC_INIT,METHOD_DEF,CTOR_DEF"/>
+    </module>
+    <module name="LineLength">
+      <property name="max" value="125"/>
+    </module>
+    <module name="ParameterNumber"/>
+    <module name="MethodCount"/>
+    <module name="WhitespaceAround">
+      <property name="tokens" value="BAND,BAND_ASSIGN,BOR,BOR_ASSIGN,BSR,BSR_ASSIGN,BXOR,BXOR_ASSIGN,COLON,DIV,DIV_ASSIGN,DO_WHILE,EQUAL,GE,GT,LAMBDA,LAND,LCURLY,LE,LITERAL_ASSERT,LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,LITERAL_RETURN,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE,LOR,LT,MINUS,MINUS_ASSIGN,MOD,MOD_ASSIGN,NOT_EQUAL,PLUS,PLUS_ASSIGN,QUESTION,RCURLY,SL,SLIST,SL_ASSIGN,SR,SR_ASSIGN,STAR,STAR_ASSIGN,TYPE_EXTENSION_AND,WILDCARD_TYPE"/>
+    </module>
+    <module name="GenericWhitespace"/>
+    <module name="EmptyForInitializerPad"/>
+    <module name="EmptyForIteratorPad"/>
+    <module name="OperatorWrap"/>
+    <module name="MethodParamPad">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="SeparatorWrap"/>
+    <module name="EmptyLineSeparator">
+      <property name="severity" value="ignore"/>
+      <metadata name="net.sf.eclipsecs.core.lastEnabledSeverity" value="inherit"/>
+    </module>
+    <module name="ParenPad"/>
+    <module name="ModifierOrder"/>
+    <module name="EmptyBlock"/>
+    <module name="EmptyCatchBlock"/>
+    <module name="LeftCurly"/>
+    <module name="NeedBraces"/>
+    <module name="RightCurly"/>
+    <module name="AvoidNestedBlocks"/>
+    <module name="CovariantEquals"/>
+    <module name="DefaultComesLast"/>
+    <module name="EmptyStatement"/>
+    <module name="IllegalInstantiation"/>
+    <module name="IllegalCatch"/>
+    <module name="IllegalThrows"/>
+    <module name="MagicNumber">
+      <property name="constantWaiverParentToken" value="TYPECAST,METHOD_CALL,EXPR,ARRAY_INIT,UNARY_MINUS,UNARY_PLUS,ELIST,STAR,ASSIGN,PLUS,MINUS,DIV,LITERAL_NEW"/>
+      <property name="ignoreNumbers" value="-1, 0, 1, 2, 3"/>
+    </module>
+    <module name="UnnecessaryParentheses"/>
+    <module name="OneStatementPerLine"/>
+    <module name="VariableDeclarationUsageDistance"/>
+    <module name="OverloadMethodsDeclarationOrder"/>
+    <module name="MultipleVariableDeclarations"/>
+    <module name="MultipleStringLiterals"/>
+    <module name="OneTopLevelClass"/>
+    <module name="DesignForExtension"/>
+    <module name="FinalClass"/>
+    <module name="AvoidEscapedUnicodeCharacters"/>
+    <module name="ArrayTypeStyle"/>
+    <module name="RequireThis"/>
+    <module name="NestedForDepth">
+      <property name="max" value="5"/>
+    </module>
+    <module name="NestedIfDepth">
+      <property name="max" value="5"/>
+    </module>
+    <module name="NestedTryDepth">
+      <property name="max" value="5"/>
+    </module>
+    <module name="NestedTryDepth">
+      <property name="max" value="5"/>
+    </module>
+    <module name="NestedIfDepth">
+      <property name="max" value="2"/>
+    </module>
+    <module name="NestedIfDepth">
+      <property name="max" value="2"/>
+    </module>
+    <module name="NestedForDepth">
+      <property name="max" value="4"/>
+    </module>
+    <module name="NestedIfDepth">
+      <property name="max" value="4"/>
+    </module>
+    <module name="NestedTryDepth">
+      <property name="max" value="4"/>
+    </module>
+    <module name="TodoComment"/>
+    <module name="EqualsAvoidNull"/>
+    <module name="ExplicitInitialization"/>
+    <module name="PackageDeclaration"/>
+    <module name="ReturnCount"/>
+    <module name="SimplifyBooleanExpression"/>
+    <module name="SimplifyBooleanReturn"/>
+    <module name="StringLiteralEquality"/>
+  </module>
+  <module name="FileLength"/>
+  <module name="FileTabCharacter"/>
+  <module name="RegexpSingleline"/>
+  <module name="RegexpOnFilename"/>
+</module>

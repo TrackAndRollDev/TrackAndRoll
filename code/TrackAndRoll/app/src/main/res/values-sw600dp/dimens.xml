@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Screen dimens for TABLET -->
+
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_padding">16dp</dimen>
+
+    <!-- Splash dimens -->
+    <dimen name="activity_splash_ic_title_width">700dp</dimen>
+    <dimen name="activity_splash_credit_text_size">30sp</dimen>
+
+    <!-- Login dimens -->
+    <dimen name="activity_login_ic_title_height">80dp</dimen>
+    <dimen name="activity_login_ic_title_margin_bottom">18dp</dimen>
+    <dimen name="activity_login_subtitle_text_size">40sp</dimen>
+    <dimen name="activity_login_submessage_text_size">30sp</dimen>
+    <dimen name="activity_login_username_password_zone_text_size">30sp</dimen>
+    <dimen name="activity_login_username_password_zone_width">500dp</dimen>
+    <dimen name="activity_login_username_password_ic_size">50dp</dimen>
+    <dimen name="activity_login_username_password_ic_padding">10dp</dimen>
+    <dimen name="activity_login_username_password_zone_text_margin_top_bottom">2dp</dimen>
+    <dimen name="activity_login_progress_bar_margin">12dp</dimen>
+    <dimen name="activity_login_progress_bar_size">60dp</dimen>
+    <dimen name="activity_login_bt_connect_padding">20dp</dimen>
+
+    <!-- Shape dimens -->
+    <dimen name="rect_border_white_stroke_dimens">4dp</dimen>
+
+
+
+    <!-- Custom Player -->
+    <dimen name="activity_player_picture">150dp</dimen>
+    <dimen name="activity_custom_player_edit_text_margin_sides">30dp</dimen>
+    <dimen name="activity_custom_player_edit_text_margin_top">10dp</dimen>
+    <dimen name="activity_custom_player_edit_text_padding">10dp</dimen>
+    <dimen name="activity_custom_player_edit_text_size">20sp</dimen>
+    <dimen name="activity_custom_player_profile_picture_size">80dp</dimen>
+    <dimen name="activity_custom_player_names_padding_start">5dp</dimen>
+    <dimen name="activity_custom_player_names_size">25sp</dimen>
+    <dimen name="activity_custom_player_button_background_size">60dp</dimen>
+    <dimen name="activity_custom_player_button_image_padding_size">15dp</dimen>
+    <dimen name="activity_custom_player_button_margin">2dp</dimen>
+    <dimen name="activity_custom_player_category_width">100dp</dimen>
+
+    <!-- Sessions manager -->
+    <dimen name="activity_sessions_manager_button_action_bar">60dp</dimen>
+    <dimen name="activity_sessions_manager_text_size">22sp</dimen>
+    <dimen name="activity_sessions_manager_margintop_item">50dp</dimen>
+    <dimen name="activity_sessions_manager_marginleft_name">100dp</dimen>
+    <dimen name="activity_sessions_manager_marginleft_speed">300dp</dimen>
+    <dimen name="activity_sessions_manager_marginleft_distance">500dp</dimen>
+    <dimen name="activity_sessions_manager_marginleft_time">700dp</dimen>
+    <dimen name="activity_sessions_manager_marginleft_heartbeat">900dp</dimen>
+
+    <dimen name="activity_item_session_player_marginleft_name">20dp</dimen>
+
+
+    <!-- Player profile Activity -->
+
+    <dimen name="activity_player_profile_text_size">30sp</dimen>
+    <dimen name="activity_player_profile_text_size_image">20sp</dimen>
+    <dimen name="activity_player_profile_margintop_data_images">100dp</dimen>
+    <dimen name="activity_player_profile_image_size">150dp</dimen>
+    <dimen name="activity_player_profile_image_margin">10dp</dimen>
+    <dimen name="activity_player_profile_rect_corner">10dp</dimen>
+    <dimen name="activity_player_profile_data_width">100dp</dimen>
+    <dimen name="activity_player_profile_data_height">160dp</dimen>
+    <dimen name="activity_player_profile_data_margin">5dp</dimen>
+    <dimen name="activity_player_profile_data_image_size">70dp</dimen>
+    <dimen name="activity_player_profile_data_divider_size">4dp</dimen>
+    <dimen name="activity_player_profile_data_divider_margin">18dp</dimen>
+
+</resources>

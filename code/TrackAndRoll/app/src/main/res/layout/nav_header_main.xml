@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navHeaderView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlue"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutMyAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center"
+        android:orientation="horizontal"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icHeaderPhoto"
+            android:layout_width="@dimen/activity_player_picture"
+            android:layout_height="@dimen/activity_player_picture"
+            android:layout_marginEnd="@dimen/header_image_margin_end"
+            app:civ_border_width="0dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_avatar"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tvHeaderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/header_name_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:text="@string/header_name"
+                />
+
+            <TextView
+                android:id="@+id/tvHeaderEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/header_email_size"
+                android:textColor="@color/colorWhite"
+                android:text="@string/header_email"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

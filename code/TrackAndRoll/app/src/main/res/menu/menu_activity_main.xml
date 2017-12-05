@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/action_players"
+              android:icon="@drawable/ic_helmet"
+              android:title="@string/menu_main_player"/>
+
+        <item android:id="@+id/action_session"
+              android:icon="@drawable/ic_session"
+              android:title="@string/menu_main_session"/>
+
+        <item android:id="@+id/action_sensors"
+              android:icon="@drawable/ic_sensors_manager"
+              android:title="@string/menu_main_sensors"/>
+
+        <item android:id="@+id/action_disconnect"
+              android:icon="@drawable/ic_shutdown"
+              android:title="@string/menu_main_logout"/>
+
+        <item android:id="@+id/action_help"
+              android:icon="@drawable/ic_help"
+              android:title="@string/menu_main_help"/>
+    </group>
+</menu>

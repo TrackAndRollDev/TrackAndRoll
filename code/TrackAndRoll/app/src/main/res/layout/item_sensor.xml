@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/tvSensorNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_recycler_list_text_size"
+                android:textColor="@color/colorWhite"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Boitier 1"
+                />
+            <TextView
+                android:id="@+id/tvSensorId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/item_recycler_list_text_size"
+                android:textColor="@color/colorWhite"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="a714-15u7-652l-mgp8"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_weight="4"
+            >
+
+            <include
+                android:layout_width="@dimen/item_recycler_list_image_size"
+                android:layout_height="@dimen/item_recycler_list_image_size"
+                layout="@layout/item_player_photo_list"
+                />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spPlayerList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="0dp"
+                android:paddingLeft="0dp"
+                android:layout_marginBottom="0dp"
+                android:paddingBottom="0dp"
+
+                app:ms_thickness="0dp"
+                app:ms_enableFloatingLabel="false"
+                app:ms_enableErrorLabel="false"
+                app:ms_arrowSize="@dimen/activity_sessions_manager_arrow_size"
+                app:ms_arrowColor="@color/colorWhite"
+                app:ms_alignLabels="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <RelativeLayout
+                android:id="@+id/imgSensorStateBackground"
+                android:layout_width="@dimen/item_recycler_list_icon_size"
+                android:layout_height="@dimen/item_recycler_list_icon_size"
+                android:background="@drawable/circle_red"
+                >
+                <ImageView
+                    android:id="@+id/imgSensorStateSrc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_white_cross"
+                    android:padding="@dimen/item_recycler_list_icon_padding"
+                    />
+                <ProgressBar
+                    android:id="@+id/pbStateConnectionProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_divider_height"
+        android:background="@color/colorItemDivider"
+        android:layout_marginLeft="@dimen/item_divider_margin_left_right"
+        android:layout_marginRight="@dimen/item_divider_margin_left_right"
+        android:layout_marginTop="@dimen/item_divider_margin_top_bottom"
+        android:layout_marginBottom="@dimen/item_divider_margin_top_bottom"
+        />
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    android:background="@drawable/degrade_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_padding"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:id="@+id/layoutQuestion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/selector_background_help_question"
+                >
+
+                <ImageView
+                    android:id="@+id/imgArrowTitle1"
+                    android:layout_width="@dimen/activity_help_arrow_size"
+                    android:layout_height="@dimen/activity_help_arrow_size"
+                    android:src="@drawable/ic_play_filled"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_question_margin"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_question_size"
+                    android:textStyle="bold"
+                    android:text="Question 1 ?"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAnswer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_help_answer_margin_top"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_answer_margin_start"
+                    android:layout_marginTop="@dimen/activity_help_answer_margin_top"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_answer_size"
+                    android:text="Réponse 1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/selector_background_help_question"
+                >
+
+                <ImageView
+                    android:id="@+id/imgArrowTitle2"
+                    android:layout_width="@dimen/activity_help_arrow_size"
+                    android:layout_height="@dimen/activity_help_arrow_size"
+                    android:src="@drawable/ic_play_filled"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_question_margin"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_question_size"
+                    android:textStyle="bold"
+                    android:text="Question 2 ?"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAnswer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_help_answer_margin_top"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_answer_margin_start"
+                    android:layout_marginTop="@dimen/activity_help_answer_margin_top"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_answer_size"
+                    android:text="Réponse 2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutQuestion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/selector_background_help_question"
+                >
+
+                <ImageView
+                    android:id="@+id/imgArrowTitle3"
+                    android:layout_width="@dimen/activity_help_arrow_size"
+                    android:layout_height="@dimen/activity_help_arrow_size"
+                    android:src="@drawable/ic_play_filled"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_question_margin"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_question_size"
+                    android:textStyle="bold"
+                    android:text="Question 3 ?"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_help_answer_margin_top"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_answer_margin_start"
+                    android:layout_marginTop="@dimen/activity_help_answer_margin_top"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_answer_size"
+                    android:text="Réponse 3"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutQuestion4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/selector_background_help_question"
+                >
+
+                <ImageView
+                    android:id="@+id/imgArrowTitle4"
+                    android:layout_width="@dimen/activity_help_arrow_size"
+                    android:layout_height="@dimen/activity_help_arrow_size"
+                    android:src="@drawable/ic_play_filled"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_question_margin"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_question_size"
+                    android:textStyle="bold"
+                    android:text="Question 4 ?"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAnswer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_help_answer_margin_top"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_answer_margin_start"
+                    android:layout_marginTop="@dimen/activity_help_answer_margin_top"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_answer_size"
+                    android:text="Réponse 4"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutQuestion5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="@drawable/selector_background_help_question"
+                >
+
+                <ImageView
+                    android:id="@+id/imgArrowTitle5"
+                    android:layout_width="@dimen/activity_help_arrow_size"
+                    android:layout_height="@dimen/activity_help_arrow_size"
+                    android:src="@drawable/ic_play_filled"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_question_margin"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_question_size"
+                    android:textStyle="bold"
+                    android:text="Question 5 ?"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAnswer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/activity_help_answer_margin_top"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_help_answer_margin_start"
+                    android:layout_marginTop="@dimen/activity_help_answer_margin_top"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/activity_help_answer_size"
+                    android:text="Réponse 5"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
