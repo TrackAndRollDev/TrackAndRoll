@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import com.neos.trackandroll.testBluetooth.ListBluetoothActivity;
-import com.neos.trackandroll.testBluetooth.TestBluetoothActivity;
 import com.neos.trackandroll.utils.LogUtils;
 
 public class ServiceActivity extends AbstractActivity {
@@ -45,15 +43,10 @@ public class ServiceActivity extends AbstractActivity {
     public static final int DISPLAY_ACTIVITY_DATA_HEART_BEAT            = 13;
     public static final int DISPLAY_ACTIVITY_DATA_ENERGY                = 14;
 
-    public static final int DISPLAY_ACTIVITY_TEST_BLUETOOTH             = 40;
-    public static final int DISPLAY_ACTIVITY_LIST_BLUETOOTH             = 41;
-
     public static final String PARAM_PLAYER_KEY                         = "PARAM_PLAYER_KEY";
     public static final String PARAM_SESSION_NAME                       = "PARAM_SESSION_NAME";
     public static final String PARAM_ROOT_SCREEN                        = "PARAM_ROOT_SCREEN";
     public static final String PARAM_CHILD_SCREEN                       = "PARAM_CHILD_SCREEN";
-    public static final String PARAM_DEVICE_KEY                         = "PARAM_DEVICE_KEY";
-    public static final String PARAM_DEVICE_ADDRESS                     = "PARAM_DEVICE_ADDRESS";
 
     public static final String ACTION_XXX                   = "ACTION_XXX";
     public static final String ACTION_YYY                   = "ACTION_YYY";
@@ -222,16 +215,6 @@ public class ServiceActivity extends AbstractActivity {
 
             case DISPLAY_ACTIVITY_RUNNING_SESSION:
                 startActivityWithParams(RunningSessionActivity.class,REQUEST_CODE_ACTIVITY_RUNNING_SESSION,
-                        requestCode, resultCode, data);
-                break;
-
-            case DISPLAY_ACTIVITY_TEST_BLUETOOTH:
-                startActivityWithParams(TestBluetoothActivity.class,REQUEST_CODE_ACTIVITY_TEST_BLUETOOTH,
-                        requestCode, resultCode, data);
-                break;
-
-            case DISPLAY_ACTIVITY_LIST_BLUETOOTH:
-                startActivityWithParams(ListBluetoothActivity.class,REQUEST_CODE_ACTIVITY_LIST_BLUETOOTH,
                         requestCode, resultCode, data);
                 break;
 

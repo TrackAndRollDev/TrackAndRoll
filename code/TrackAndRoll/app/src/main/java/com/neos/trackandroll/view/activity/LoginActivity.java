@@ -68,11 +68,6 @@ public class LoginActivity extends AbstractActivity {
             }
         });
 
-        btDisplayBluetoothActivity.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finishWithResult(ServiceActivity.DISPLAY_ACTIVITY_LIST_BLUETOOTH);
-            }
-        });
+        btDisplayBluetoothActivity.setVisibility(View.INVISIBLE);
     }
 }

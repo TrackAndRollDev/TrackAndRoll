@@ -1,9 +1,6 @@
 package com.neos.trackandroll.view.activity;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +10,6 @@ import com.neos.trackandroll.model.DataStore;
 import com.neos.trackandroll.model.player.Player;
 import com.neos.trackandroll.utils.DialogUtils;
 import com.neos.trackandroll.utils.LogUtils;
-import com.neos.trackandroll.view.broadcast.ServiceBroadcastReceiver;
 
 import java.util.HashMap;
 
@@ -22,7 +18,6 @@ public abstract class AbstractActivity extends AppCompatActivity {
     protected boolean drawerOpen;
     protected HashMap<String, String> mapParams;
 
-    private ServiceBroadcastReceiver serviceBroadcastReceiver;
     private boolean isRegistered = false;
 
     /**
@@ -43,30 +38,6 @@ public abstract class AbstractActivity extends AppCompatActivity {
                     LogUtils.e(LogUtils.DEBUG_TAG, "Exception in onCreate AbstractActivity => ", e);
                 }
             }
-        }
-    }
-
-    ///////////////////
-    // USE BROADCAST //
-    ///////////////////
-
-    protected void unregisterBroadcastReceiver() {
-        if (serviceBroadcastReceiver != null && isRegistered) {
-            isRegistered = false;
-            this.unregisterReceiver(serviceBroadcastReceiver);
-        }
-    }
-
-    protected void registerBroadcastReceiver() {
-        if (!isRegistered) {
-            isRegistered = true;
-            serviceBroadcastReceiver = new ServiceBroadcastReceiver();
-
-            IntentFilter intentFilter = new IntentFilter();
-            intentFilter.addAction(ServiceActivity.ACTION_XXX);
-            intentFilter.addAction(ServiceActivity.ACTION_YYY);
-
-            this.registerReceiver(serviceBroadcastReceiver, intentFilter);
         }
     }
 
